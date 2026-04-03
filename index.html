@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Gawande - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <!-- <link href="portfolio.css" rel="stylesheet"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: yellow;
+            font-size: 1.2rem;
+
+        }
+
+        main hr {
+            margin: 20px 44px;
+            height: 1.2px;
+            border: 0;
+            background: #9c97f1;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+   /* first section */
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 20px 10px;
+
+             font-weight: bold;
+             display: inline-block;
+             background: linear-gradient(45deg, #ff6a00, #ee0979);
+             transition: all 0.4s ease;
+        }
+
+        .leftSection .btn:hover{
+             transform: scale(1.2);
+             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(255, 0, 255);
+        }
+
+        .text-gray {
+            color: grey;
+
+        }
+
+        #element {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        /* second section*/
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondsection .box {
+            margin: 56px 0;
+            width: 80vw;
+            height: 2px;
+            background: white;
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            width: 1px;
+            height: 93px;
+            background: white;
+            display: inline-block;
+            margin: 0 150px;
+        }
+
+        .image-top {
+            width: 40px;
+            top: -32px;
+            left: -9px;
+            position: relative;
+        }
+
+        .verttical-title {
+            position: relative;
+            top: 50px;
+            width: 400px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 30px;
+            color: rgb(177, 169, 169);
+            width: 400px;
+            font-size: 12px;
+        }
+
+        .vertical-desc ul {
+            padding-left: 20px;
+        }
+
+        .vertical-desc ul li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 14px;
+            color: rgb(177, 171, 171);
+            list-style: disc;
+            /* proper bullets */
+        }
+
+        .verttical-title h4 {
+            color: rgb(240, 240, 234);
+            font-size: 14px;
+        }
+
+        .verttical-title h3 {
+            color: rgb(238, 235, 59);
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .verttical-title p {
+            color: rgb(177, 165, 165);
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+
+        /* Third Section  */
+
+        .thirdsection {
+            max-width: 55vw;
+            margin: auto;
+            height: 80vh;
+            justify-content: flex-end;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .third-title {
+             margin-bottom: 10px;
+             text-align: right;  
+        }
+
+        .box-skill {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .vertical-skill {
+            width: 150px;
+        }
+
+        .thirdsection .box {
+            margin: 56px 0;
+            width: 80vw;
+            height: 2px;
+            background: white;
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        .thirdsection .vertical {
+            width: 50%;
+            height: 93px;
+            background: white;
+            display: inline-block;
+            margin-left: auto;
+        }
+
+
+        /* .image-top {
+            width: 40px;
+            top: -32px;
+            left: -9px;
+            position: relative;
+        } */
+
+
+        .verttical-batch {
+            position: relative;
+            top: 8px;
+            width: 400px;
+            margin:0;
+
+        }
+
+        .vertical-disc {
+            position: relative;
+            top: 20px;
+            color: rgb(177, 161, 161);
+            width: 400px;
+            font-size: 12px;
+        }
+
+        .vertical-disc ul {
+            padding-left: 20px;
+            color: rgb(177, 171, 171);
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+
+        .vertical-disc ul li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 14px;
+            color: rgb(177, 171, 171);
+            list-style: disc;
+            
+            /* proper bullets */
+        }
+
+        .verttical-batch h4 {
+            color: rgb(177, 171, 171);
+            font-size: 12px;
+            margin-top: 8px;
+            
+        }
+
+        .verttical-batch h3 {
+            color: rgb(238, 235, 59);
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        
+
+        /*  footer section*/
+
+        footer {
+            background-color: rgb(18, 18, 62);
+            margin-top: 30px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        
+
+        .footer li {
+            margin-bottom: 10px;
+        }
+
+        .footer-first h3 {
+        color: rgb(177, 171, 171);
+        font-size: 0.7rem;
+        }
+
+        .footer-second a {
+            font-size: 16px;
+            margin: 10px;
+            gap: 10px;
+            display: flex;
+            text-decoration: none;
+            color:white;
+            transition: 0.3s;
+        }
+
+        /* Individual colors */
+        .fa-linkedin {
+            color: #0A66C2;
+        }
+
+        .fa-github {
+            color: #827e7e;
+        }
+
+        .fa-instagram {
+            color: #E4405F;
+        }
+
+        .fa-whatsapp {
+            color: #25D366;
+        }
+
+        .footer-second a:hover {
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+
+
+        .footer-third li a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .footer-third ul li a:hover {
+            color: yellow;
+        }
+
+        .footer-fourth li {
+            color: rgb(226, 240, 240);
+            ;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(177, 171, 171);
+            margin-top: 20px;
+            padding: 12px 0;
+            font-size: 0.8rem;
+        }
+
+
+        /* fourthsection*/
+
+        .fourthsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .fourthsection h2 {
+            font-size: 2rem;
+        }
+
+         .text-black {
+            font-size: 0.8rem;
+            margin: 0 50px;
+            color: rgb(177, 171, 171);
+        }
+        
+        .fourthsection .box-projects {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .fourthsection .verttical-projects {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 200px;
+            
+        }
+
+        .project {
+            color: rgb(238, 235, 59);
+            margin-bottom: 8px;
+            font-size: 16px;  
+            position: relative;  
+            top: 100px;
+            width: 200px;
+        }
+
+        .horizontal-desc {
+            color: rgb(177, 171, 171);
+            font-size: 12px;
+            position: relative;
+            top: 100px;
+            width: 200px;
+            font-size: 12px;
+            text-align:justify;
+        }   
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    </style>  
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Harish Gawande Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#home"> Home </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#projects"> Projects </a> </li>
+                    <li> <a href="#contact"> Contact Me </a> </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection"  id="home">
+            <div class="leftSection">
+                Hi, My name is <span class="purple"> Harish Gawande </span>
+                <div> and I am a Full Stack Java Developer. </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"  onclick="openLink('resume')">Download Resume</button>
+                    <button class="btn" onclick="openLink('github')">visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="ba.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection" id="about">
+            <span class="text-gray"> What I've Done so far </span>
+            <h2 class="section-title"> 💼 Work Experience </h2>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+
+                    <div class="verttical-title">
+                        <h3> Web Development Intern (Frontend Developer) </h3>
+                        <h4> Infotact Solutions </h4>
+                        <p> Feb 2026 - April 2026 </p>
+                        <div class="vertical-desc">
+                            <ul>
+                                <li><i class="fas fa-code"></i> Built responsive UI using HTML, CSS, JavaScript</li>
+                                <li><i class="fas fa-users"></i>Worked in team environment with backend developers</li>
+                                <li><i class="fas fa-plug"></i> Integrated APIs for dynamic data handling</li>
+                                <li><i class="fas fa-bug"></i> Fixed bugs and improved UI performance</li>
+                                <li><i class="fas fa-mobile-alt"></i> Optimized design for mobile & desktop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="thirdsection" id="about">
+            <h2 class="third-title"> 🧠 My Skills </h2>
+
+            <div class="box-skill">
+                <div class="vertical-skill">
+
+
+                    <div class="verttical-batch">
+                        <h3> Full Stack Java Developer </h3>
+                        <h4> ( I Have The Following Technical Skills ) </h4>
+
+                        <div class="vertical-disc">
+                            <ul>
+                                <li><i class="fas fa-lan"></i> HTML, CSS, JavaScript, Bootstrap</li>
+                                <li><i class="fas fa-fram"></i> React.js</li>
+                                <li><i class="fas fa-data"></i> Oracle (SQL, PL/SQL)</li>
+                                <li><i class="fas fa-back"></i> Java</li>
+                                <li><i class="fas fa-back-fram"></i> Spring Boot</li>
+                                <li><i class="fas fa-back-fram"></i> Tools:- Git, GitHub, Maven, PostMan, Junit, VS code, Ecllipse </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+<hr>
+        <section class="fourthsection" id="projects">
+            <h2 class="fourth-title"> 📂 Projects </h2>
+            <span class="text-black"> My Academic Projects </span>
+            <div class="box-projects">
+
+                <div class="verttical-projects">
+                    <div class="project"> Mini Calculator Web Application (Frontend Project) </div>
+                    <div class="horizontal-desc"> Developed a responsive Mini Calculator web application using HTML, CSS, and JavaScript to
+                        perform basic arithmetic operations. Implemented addition, subtraction, multiplication, and
+                        division with dynamic result handling using JavaScript DOM manipulation. Designed a user-friendly
+                        interface and strengthened frontend development and problem solving skills through hands-on 
+                        implementation. </div>
+                </div>
+
+                <div class="verttical-projects">
+                    <div class="project"> E-Commerce Web Application (Full Stack Project) </div>
+                    <div class="horizontal-desc"> Developed a full-stack e-commerce application using React, Java Spring Boot, REST APIs, and
+                        Oracle Database, with responsive UI built using HTML, CSS, and JavaScript. Implemented backend
+                        services using Spring Boot, Spring Data JPA, Hibernate, and integrated
+                        frontend with backend following MVC architecture. </div>
+                </div>
+
+                <div class="verttical-projects">
+                    <div class="project"> My Portfolio /harishprofile.w3spaces.com </div>
+                    <div class="horizontal-desc"> Developed a responsive portfolio website using HTML, CSS. Showcased projects, technical skills,
+                        and professional details with clean UI design. Implemented interactive elements and smooth
+                        navigation using HTML. </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer" id="contact">
+            <div class="footer-first">
+                <h3>© 2026 Harish Gawande Developer Portfolio </h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li> <a href="https://www.linkedin.com/in/harish-gawande-b322a5234/" target="_blank"> <i
+                                class="fa-brands fa-linkedin"></i>LinkedIn</a> </li>
+                    <li> <a href="https://github.com/gawandeharish26-maker" target="_blank"> <i class="fa-brands fa-github"></i>
+                            GitHub</a> </li>
+                    <li> <a href="https://wa.me/918237409923" target="_blank"> <i
+                                class="fa-brands fa-whatsapp"></i>
+                            WhatsApp</a> </li>
+                    <li> <a href="https://www.instagram.com/harish_gawande._/" target="_blank"> <i
+                                class="fa-brands fa-instagram"></i> Instagram</a> </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="#home"> Home </a> </li>
+                    <li><a href="#about"> About </a> </li>
+                    <li><a href="#projects"> Projects </a> </li>
+                    <li><a href="#contact" > Contact Me </a> </li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>    
+                    <li> Contact info :- </li>
+                    <li> Phone: +91 8237409923 </li>
+                    <li> Email: gawandeharish26@gmail.com </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169; www.harishgawande.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' I build scalable, high-performance web applications using modern Java technologies.', ' Turning ideas into powerful digital solutions with clean code and smart design.'],
+            typeSpeed: 20,
+        });
+    </script>
+
+
+<script>
+function openLink(type) {
+    if(type === "resume") {
+        window.open("HarishResume.pdf", "_blank");
+    } 
+    else if(type === "github") {
+        window.open("https://github.com/gawandeharish26-maker?tab=repositories", "_blank");
+    }
+}
+</script>       
+
+
+</body>
+
+</html>
